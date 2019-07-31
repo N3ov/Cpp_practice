@@ -1,18 +1,25 @@
+#include <stdio.h>
 #include <iostream>
-#include <cstdlib>
 
 using namespace std;
-int main(void){
-    int num1 = 5; 
-    int num2 = 6;
-    return 0;
-};
+// int func before main()
 int add(int num1, int num2){
     int a;
     a = num1 +num2;
-    return a;
-};
+    return a; 
+}
 
 void add(){
-    cout << "a test function." << endl;
-};
+
+    cout << "a test func" << endl;
+
+}
+
+int main(int argc, char** argv){
+
+    int a = 6;
+    int b = 5;
+
+    cout << add(a, b) << endl;
+}
+
